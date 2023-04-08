@@ -1,136 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230408 16:40:54.192" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230408 17:48:56.497" rpa="false" schemaversion="3">
 <suite id="s1" name="Swag-Labs" source="C:\Users\ASUS TUF\Pictures\faii\automate\swag-labs">
 <suite id="s1-s1" name="TestCase" source="C:\Users\ASUS TUF\Pictures\faii\automate\swag-labs\TestCase">
-<suite id="s1-s1-s1" name="LoginClient" source="C:\Users\ASUS TUF\Pictures\faii\automate\swag-labs\TestCase\LoginClient.robot">
+<suite id="s1-s1-s1" name="CheckoutOrder" source="C:\Users\ASUS TUF\Pictures\faii\automate\swag-labs\TestCase\CheckoutOrder.robot">
 <test id="s1-s1-s1-t1" name="[Func][UI][Client][Login]" line="7">
 <kw name="Go to Client Login Page" library="ClientKeyword">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL_SWAG_LABS}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230408 16:40:54.463" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20230408 16:40:54.463" endtime="20230408 16:40:56.426"/>
+<msg timestamp="20230408 17:48:56.665" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20230408 17:48:56.664" endtime="20230408 17:48:58.435"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>1920</arg>
 <arg>1080</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20230408 16:40:56.426" endtime="20230408 16:40:56.532"/>
+<status status="PASS" starttime="20230408 17:48:58.436" endtime="20230408 17:48:58.541"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230408 16:40:57.033" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20230408 16:40:56.532" endtime="20230408 16:40:57.033"/>
+<msg timestamp="20230408 17:48:59.043" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230408 17:48:58.542" endtime="20230408 17:48:59.044"/>
 </kw>
-<status status="PASS" starttime="20230408 16:40:54.462" endtime="20230408 16:40:57.033"/>
+<status status="PASS" starttime="20230408 17:48:56.664" endtime="20230408 17:48:59.044"/>
 </kw>
 <kw name="Login Swag Labs" library="ClientKeyword">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${INPUT_USERNAME_XPATH_CLIENT}</arg>
 <arg>${USERNAME_CLIENT1}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.036" level="INFO">Typing text 'standard_user' into text field '//input[@name='user-name']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.035" endtime="20230408 16:40:57.093"/>
+<msg timestamp="20230408 17:48:59.048" level="INFO">Typing text 'standard_user' into text field '//input[@name='user-name']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.046" endtime="20230408 17:48:59.100"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${INPUT_PASSWORD_XPATH_CLIENT}</arg>
 <arg>${PASSWORD_CLIENT}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.093" level="INFO">Typing text 'secret_sauce' into text field '//input[@name='password']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.093" endtime="20230408 16:40:57.142"/>
+<msg timestamp="20230408 17:48:59.101" level="INFO">Typing text 'secret_sauce' into text field '//input[@name='password']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.100" endtime="20230408 17:48:59.148"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BTN_LOGIN_CLIENT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.143" level="INFO">Clicking element '//input[@name='login-button']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.142" endtime="20230408 16:40:57.197"/>
+<msg timestamp="20230408 17:48:59.149" level="INFO">Clicking element '//input[@name='login-button']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.148" endtime="20230408 17:48:59.204"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SHOW_PRODUCT}</arg>
 <arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230408 16:40:57.198" endtime="20230408 16:40:57.214"/>
+<status status="PASS" starttime="20230408 17:48:59.204" endtime="20230408 17:48:59.222"/>
 </kw>
-<status status="PASS" starttime="20230408 16:40:57.034" endtime="20230408 16:40:57.214"/>
+<status status="PASS" starttime="20230408 17:48:59.045" endtime="20230408 17:48:59.222"/>
 </kw>
 <kw name="Select Product and Checkout" library="ClientKeyword">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BTN_ADD_TO_CARD_BACKPACK}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.215" level="INFO">Clicking element '//div[@class='inventory_item']//div[@class='inventory_item_description']//button[@name='add-to-cart-sauce-labs-backpack']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.215" endtime="20230408 16:40:57.249"/>
+<msg timestamp="20230408 17:48:59.223" level="INFO">Clicking element '//div[@class='inventory_item']//div[@class='inventory_item_description']//button[@name='add-to-cart-sauce-labs-backpack']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.223" endtime="20230408 17:48:59.258"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BTN_CARD_ICON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.250" level="INFO">Clicking element '//div[@class='shopping_cart_container']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.249" endtime="20230408 16:40:57.280"/>
+<msg timestamp="20230408 17:48:59.258" level="INFO">Clicking element '//div[@class='shopping_cart_container']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.258" endtime="20230408 17:48:59.290"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${CART_LIST}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230408 16:40:57.281" endtime="20230408 16:40:57.298"/>
+<status status="PASS" starttime="20230408 17:48:59.290" endtime="20230408 17:48:59.305"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BTN_CHECKOUT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.299" level="INFO">Clicking element '//button[@name='checkout']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.298" endtime="20230408 16:40:57.329"/>
+<msg timestamp="20230408 17:48:59.305" level="INFO">Clicking element '//button[@name='checkout']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.305" endtime="20230408 17:48:59.337"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${INPUT_FIRSTNAME_XPATH_CLIENT}</arg>
 <arg>${FIRSTNAME_CLIENT1}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.329" level="INFO">Typing text 'Nong' into text field '//input[@name='firstName']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.329" endtime="20230408 16:40:57.383"/>
+<msg timestamp="20230408 17:48:59.338" level="INFO">Typing text 'Nong' into text field '//input[@name='firstName']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.338" endtime="20230408 17:48:59.391"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${INPUT_LASTNAME_XPATH_CLIENT}</arg>
 <arg>${LASTNAME_CLIENT1}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.384" level="INFO">Typing text 'DREAMIE' into text field '//input[@name='lastName']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.383" endtime="20230408 16:40:57.434"/>
+<msg timestamp="20230408 17:48:59.392" level="INFO">Typing text 'DREAMIE' into text field '//input[@name='lastName']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.391" endtime="20230408 17:48:59.447"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${INPUT_ZIPCODE_XPATH_CLIENT}</arg>
 <arg>${ZIP_CODE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.434" level="INFO">Typing text '250816' into text field '//input[@name='postalCode']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.434" endtime="20230408 16:40:57.491"/>
+<msg timestamp="20230408 17:48:59.449" level="INFO">Typing text '250816' into text field '//input[@name='postalCode']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.448" endtime="20230408 17:48:59.506"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BTN_CONTINUE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.492" level="INFO">Clicking element '//input[@name='continue']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.491" endtime="20230408 16:40:57.529"/>
+<msg timestamp="20230408 17:48:59.506" level="INFO">Clicking element '//input[@name='continue']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.506" endtime="20230408 17:48:59.544"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${CART_LIST}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230408 16:40:57.529" endtime="20230408 16:40:57.542"/>
+<status status="PASS" starttime="20230408 17:48:59.544" endtime="20230408 17:48:59.557"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BTN_FINISH}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230408 16:40:57.543" level="INFO">Clicking element '//button[@name='finish']'.</msg>
-<status status="PASS" starttime="20230408 16:40:57.542" endtime="20230408 16:40:57.568"/>
+<msg timestamp="20230408 17:48:59.558" level="INFO">Clicking element '//button[@name='finish']'.</msg>
+<status status="PASS" starttime="20230408 17:48:59.557" endtime="20230408 17:48:59.586"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${TEXT_CONFIRM_ORDER}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230408 16:40:57.568" endtime="20230408 16:40:57.582"/>
+<status status="PASS" starttime="20230408 17:48:59.586" endtime="20230408 17:48:59.599"/>
 </kw>
-<status status="PASS" starttime="20230408 16:40:57.214" endtime="20230408 16:40:57.583"/>
+<status status="PASS" starttime="20230408 17:48:59.222" endtime="20230408 17:48:59.599"/>
 </kw>
-<status status="PASS" starttime="20230408 16:40:54.460" endtime="20230408 16:40:57.583"/>
+<status status="PASS" starttime="20230408 17:48:56.663" endtime="20230408 17:48:59.600"/>
 </test>
-<status status="PASS" starttime="20230408 16:40:54.215" endtime="20230408 16:40:57.584"/>
+<status status="PASS" starttime="20230408 17:48:56.520" endtime="20230408 17:48:59.601"/>
 </suite>
-<status status="PASS" starttime="20230408 16:40:54.214" endtime="20230408 16:40:57.586"/>
+<status status="PASS" starttime="20230408 17:48:56.517" endtime="20230408 17:48:59.602"/>
 </suite>
-<status status="PASS" starttime="20230408 16:40:54.196" endtime="20230408 16:40:57.587"/>
+<status status="PASS" starttime="20230408 17:48:56.500" endtime="20230408 17:48:59.604"/>
 </suite>
 <statistics>
 <total>
@@ -141,7 +141,7 @@
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Swag-Labs">Swag-Labs</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCase">Swag-Labs.TestCase</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="LoginClient">Swag-Labs.TestCase.LoginClient</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="CheckoutOrder">Swag-Labs.TestCase.CheckoutOrder</stat>
 </suite>
 </statistics>
 <errors>

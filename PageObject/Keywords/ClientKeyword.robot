@@ -1,10 +1,5 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    RequestsLibrary
-Library    JSONLibrary
-Library    OperatingSystem
-Library    DateTime
-Library    String
 Resource    ../Locators/CommonLocator.robot
 
 *** Keywords ***
