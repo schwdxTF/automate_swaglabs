@@ -8,3 +8,8 @@ Resource    ../PageObject/Locators/CommonLocator.robot
     Go to Client Login Page
     Login Swag Labs
     Select Product and Checkout
+
+[Func][UI][Client][Login][Failed]
+    Go to Client Login Page
+    Login Swag Labs Failed
+    Select Product and Checkout

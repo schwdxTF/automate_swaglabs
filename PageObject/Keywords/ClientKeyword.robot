@@ -14,6 +14,12 @@ Login Swag Labs
     Click Element    ${BTN_LOGIN_CLIENT}
     Wait Until Element Is Visible    ${SHOW_PRODUCT}    timeout=20
 
+Login Swag Labs Failed
+    Input Text    ${INPUT_USERNAME_XPATH_CLIENT}    ${USERNAME_WRONG}
+    Input Text    ${INPUT_PASSWORD_XPATH_CLIENT}    ${PASSWORD_CLIENT}
+    Click Element    ${BTN_LOGIN_CLIENT}
+    Wait Until Element Is Visible    ${SHOW_PRODUCT}    timeout=20
+
 Select Product and Checkout
     Click Element    ${BTN_ADD_TO_CARD_BACKPACK}
     Click Element    ${BTN_CARD_ICON}
